@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: EUREKA
+server:
+  port: 8762
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8762/eureka
+##公共配置
+  jackson:
+    time-zone: GMT+8
+    date-format: "yyyy-MM-dd HH:mm:ss"

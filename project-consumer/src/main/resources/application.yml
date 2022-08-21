@@ -1,0 +1,17 @@
+server:
+  port: 8081
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    enabled: true
+    service-url:
+      defaultZone: http://127.0.0.1:8762/eureka
+spring:
+  application:
+    name: PORJECT-CONSUMER
+##????
+  jackson:
+    time-zone: GMT+8
+    date-format: "yyyy-MM-dd HH:mm:ss"
+
