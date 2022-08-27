@@ -1,15 +1,7 @@
 package com.faraway.demo.provider.controller;
 
-import org.apache.rocketmq.client.producer.DefaultMQProducer;
-import org.apache.rocketmq.client.producer.SendCallback;
-import org.apache.rocketmq.client.producer.SendResult;
-import org.apache.rocketmq.common.message.Message;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author: 张峰玮
@@ -20,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 @RestController
 public class RocketMqController {
 
-    @GetMapping("/sayHello")
+    /*@GetMapping("/sayHello")
     public void sayHello() throws Exception {
         //1.创建出来一个生产者对象
         DefaultMQProducer defaultMQProducer = new DefaultMQProducer("rocketmq-producer");
@@ -49,10 +41,10 @@ public class RocketMqController {
         producer.start();
         for (int i = 0; i < 100; i++) {
             //Create a message instance, specifying topic, tag and message body.
-            Message msg = new Message("TopicTest" /* Topic */,
-                    "TagA" /* Tag */,
+            Message msg = new Message("TopicTest" *//* Topic *//*,
+                    "TagA" *//* Tag *//*,
                     ("Hello RocketMQ " +
-                            i).getBytes(RemotingHelper.DEFAULT_CHARSET) /* Message body */
+                            i).getBytes(RemotingHelper.DEFAULT_CHARSET) *//* Message body *//*
             );
             //Call send message to deliver message to one of brokers.
             SendResult sendResult = producer.send(msg);
@@ -113,10 +105,10 @@ public class RocketMqController {
         producer.start();
         for (int i = 0; i < 100; i++) {
             //Create a message instance, specifying topic, tag and message body.
-            Message msg = new Message("TopicTest" /* Topic */,
-                    "TagA" /* Tag */,
+            Message msg = new Message("TopicTest" *//* Topic *//*,
+                    "TagA" *//* Tag *//*,
                     ("Hello RocketMQ " +
-                            i).getBytes(RemotingHelper.DEFAULT_CHARSET) /* Message body */
+                            i).getBytes(RemotingHelper.DEFAULT_CHARSET) *//* Message body *//*
             );
             //Call send message to deliver message to one of brokers.
             producer.sendOneway(msg);
@@ -124,5 +116,5 @@ public class RocketMqController {
         //Wait for sending to complete
         Thread.sleep(5000);
         producer.shutdown();
-    }
+    }*/
 }

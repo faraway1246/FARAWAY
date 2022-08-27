@@ -1,12 +1,6 @@
 package com.faraway.demo.consumer.controller;
 
-import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
-import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
-import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
-import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
-import org.apache.rocketmq.client.exception.MQClientException;
-import org.apache.rocketmq.common.message.MessageExt;
-import org.springframework.web.bind.annotation.GetMapping;
+
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -20,7 +14,7 @@ import java.util.List;
 @RestController
 public class RocketMqController {
 
-    @GetMapping("/getHello")
+    /*@GetMapping("/getHello")
     public void getHello() throws MQClientException,InterruptedException {
         //1.创建出来一个消费者对象
         DefaultMQPushConsumer consumer  = new DefaultMQPushConsumer("rocketmq-consumer");
@@ -70,5 +64,5 @@ public class RocketMqController {
         consumer.start();
 
         System.out.printf("Consumer Started.%n");
-    }
+    }*/
 }

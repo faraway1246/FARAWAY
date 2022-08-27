@@ -57,10 +57,16 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <!--rocketMq依赖-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.apache.rocketmq</groupId>
             <artifactId>rocketmq-client</artifactId>
             <version>4.9.1</version>
+        </dependency>-->
+        <!--rabbitmq 依赖客户端-->
+        <dependency>
+            <groupId>com.rabbitmq</groupId>
+            <artifactId>amqp-client</artifactId>
+            <version>5.8.0</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
