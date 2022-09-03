@@ -68,6 +68,16 @@
             <artifactId>amqp-client</artifactId>
             <version>5.8.0</version>
         </dependency>
+        <!--RabbitMQ 依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.47</version>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>

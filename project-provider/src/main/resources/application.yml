@@ -14,3 +14,10 @@ spring:
   jackson:
     time-zone: GMT+8
     date-format: "yyyy-MM-dd HH:mm:ss"
+
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
